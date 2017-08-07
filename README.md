@@ -36,7 +36,7 @@ sudo apt-get install libqtgui4
 
 ## Create Python and R Environments
 
-Python has been migrating to version 3 so better to start here and also install a version 2 environment in case someting doesn't work with verison 3. We'll also install a R environment to greater flexibility.
+Python has been migrating to version 3 so better to start here and also install a version 2 environment in case something doesn't work with verison 3. We'll also install an R environment to greater flexibility.
 
 ### Python 3.6
 
