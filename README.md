@@ -1,4 +1,4 @@
-# wsl data science setup
+# WSL data science setup
 
 Installing scientific computing software on a USGS computer can be difficult, but if you are on Windows 10 you have access to the Windows Subsystem for Linux (WSL), which is essentially an Unbuntu linux installation running on your PC. As WSL is essentially a virtualized environment within your Windows system you have root access to the WSL. This makes it a great place to put your scientific software. Another benefit of working via WSL is that your scripts will run on Windows via WSL, on OS X and on Linux machines and clusters. 
 
