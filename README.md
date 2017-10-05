@@ -111,6 +111,8 @@ Save the file and try again
 ```python -c "import ee; ee.Initialize()"```
 EE should work now.
 
+## Configurations to make things work more smoothly
+
 ### Getting CMDER working with arrows in vim
 
 The arrow keys do not work when vim is opened in CMDER. Searched the net for a fix and found the tweak below.
@@ -121,3 +123,50 @@ The arrow keys do not work when vim is opened in CMDER. Searched the net for a f
 - In the large box below: cmd /k "%windir%\system32\bash.exe" -cur_console:p
 
 This trick seems to work and make CMDER function more normally. 
+
+### Update Jupyter and ipython configurations
+
+Some of these, like the packages I load at the beginning are personal choices.
+
+First make a configuration:
+
+```jupyter notebook --generate-config```
+
+Move to the config file.
+
+```
+cd ~/.jupyter 
+vim jupyter_notebook_config.py
+```
+
+Add or change the following line:
+
+```c.NotebookApp.open_browser = False```
+
+Then move to the ipython config file.
+
+```
+cd ../.ipython/profile_default # you might have the create a default profile if one is not there already, it was for me...
+vim ipython_config.py
+```
+
+Add or change the followng lines:
+
+```
+c.InteractiveShellApp.exec_lines = ['import pandas as pd',
+'import matplotlib.pyplot as plt',
+'import numpy as np',
+'import glob']
+
+c.InteractiveShellApp.matplotlib = 'inline'
+```
+
+Add a password to the Jupyter notebook:
+```jupyter notebook password```
+
+
+
+
+
+
+
