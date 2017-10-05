@@ -19,10 +19,12 @@ Now you have a working version of Ubuntu on your Windows PC!
 ## Get a working Python installation and the conda package/environment manager
 ```
 # download miniconda
-wget --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-4.3.21-Linux-x86_64.sh
+# a newer version of this package might work for you, but as of 10/2/2017 the newest MiniConda release caused an SSL error
+# on WSL...
 
 # install miniconda
-bash ./Miniconda3-latest-Linux-x86_64.sh
+bash ./Miniconda3-4.3.21-Linux-x86_64.sh
 
 # fix the ssl usgs issue:
 conda config --set ssl_verify False
