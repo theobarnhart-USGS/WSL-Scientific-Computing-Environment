@@ -17,6 +17,10 @@ sudo apt-get update # update ubuntu
 Now you have a working version of Ubuntu on your Windows PC!
 
 ## Get a working Python installation and the conda package/environment manager
+
+Here is where Anaconda keeps its old versions:
+https://repo.continuum.io/miniconda/
+
 ```
 # download miniconda
 wget --no-check-certificate https://repo.continuum.io/miniconda/Miniconda3-4.3.21-Linux-x86_64.sh
